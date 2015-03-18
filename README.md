@@ -42,11 +42,11 @@ It is recommended to also use the following for experimenting with the source co
 * Finding cuberoots is more difficult than finding cubes
 * So we can memoize and start calculating cubes of all numbers from 1 to some upper limit
 * For each such cube that we calculate, the digits that constitute it can be used for identifying permutations
-* 2 strategies are provided:
-** CodePoint: Compute histogram for digits 0-9 and the resulting number is the codepoint. For example: codePoint(1252) = 0120010000
-** FingerPrint: Sort the digits. For example: fingerprint(1225L) = 1225
+* <b>CodePoint identification</b>: Compute histogram for digits 0-9 and the resulting number is the codepoint. For example: codePoint(1252) = 0120010000
+* <b>FingerPrint identification</b>: Sort the digits. For example: fingerprint(1225L) = 1225
 * Leverage the cache used for memoizing to maintain cubes that yield the same codePoint/fingerPrint
 * Scan the cache to find desired length groups of cubes and return smallest amongst them
+* Upper limits are heuristics. For example for k = 3, an upper limit of 1000 is ok to find smallest cube (345).
 
 ### License
 
