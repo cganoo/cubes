@@ -34,7 +34,7 @@ It is recommended to also use the following for experimenting with the source co
 * <b>Application description</b>: A stand-alone scala app
 * <b>Build and Dependency management</b>: Gradle is used for this
 * <b>Algorithms used</b>: See below
-* <b>Unit Tests</b>: A few representative Junit4 unit tests run with Spring are included.
+* <b>Unit Tests</b>: A few representative Junit4 unit tests are included.
 
 ### Notes on algorithms used
 
